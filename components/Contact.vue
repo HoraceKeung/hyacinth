@@ -65,7 +65,7 @@ export default {
 		sendContact () {
 			this.touched = true
 			if (this.canSend) {
-				fetch('https://formspree.io/horacekeung@hotmail.com', {
+				fetch('https://formspree.io/michellehanyeung@gmail.com', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
