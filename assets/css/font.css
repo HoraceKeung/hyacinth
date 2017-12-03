@@ -1,0 +1,20 @@
+@font-face {
+    font-family: futura;
+    src: url(~/assets/fonts/futura/Futura_Heavy_Italic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: futura;
+    src: url(~/assets/fonts/futura/Futura_Heavy.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: futura;
+    src: url(~/assets/fonts/futura/Futura_Italic.ttf);
+    font-weight: italic;
+}
+@font-face {
+    font-family: futura;
+    src: url(~/assets/fonts/futura/Futura.ttf);
+}
