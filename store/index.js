@@ -2,7 +2,8 @@ export const state = () => ({
 	lang: null,
 	currentLangName: null,
 	langNames: null,
-	currentYear: new Date().getFullYear()
+	currentYear: new Date().getFullYear(),
+	scrollTop: 0
 })
 
 export const mutations = {
@@ -14,5 +15,8 @@ export const mutations = {
 	},
 	setLangNames (state, names) {
 		state.langNames = names
+	},
+	setScrollTop (state, y) {
+		state.scrollTop = y
 	}
 }

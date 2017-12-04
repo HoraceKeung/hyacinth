@@ -1,6 +1,7 @@
 <template>
 	<section>
 		<video autoplay muted loop :src="require('~/assets/rain.mp4')"></video>
+		<gradient />
 		<hero />
 		<about />
 		<contact />
@@ -8,11 +9,12 @@
 </template>
 
 <script>
+import Gradient from '~/components/Gradient.vue'
 import Hero from '~/components/Hero.vue'
 import About from '~/components/About.vue'
 import Contact from '~/components/Contact.vue'
 export default {
-	components: {Hero, About, Contact}
+	components: {Gradient, Hero, About, Contact}
 }
 </script>
 
