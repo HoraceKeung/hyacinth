@@ -1,7 +1,7 @@
 <template>
 	<div class="container fixed-top">
 		<div class="logo-overlay">
-			<img src="http://via.placeholder.com/100x100">
+			<img width="100" src="~/assets/img/logo.png">
 		</div>
 		<div class="float-right pt-5">
 			<ul>
@@ -29,7 +29,7 @@ export default {
 <style scoped>
 .logo-overlay {
 	padding: 3rem 1rem 1rem;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
 	position: absolute;
 }
 </style>

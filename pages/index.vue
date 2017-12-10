@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<video autoplay muted loop :src="require('~/assets/rain.mp4')"></video>
+		<div class="btCont"><div id="bt"></div></div>
 		<gradient />
 		<hero />
 		<about />
@@ -9,17 +9,33 @@
 </template>
 
 <script>
+import BackTube from 'back-tube'
 import Gradient from '~/components/Gradient.vue'
 import Hero from '~/components/Hero.vue'
 import About from '~/components/About.vue'
 import Contact from '~/components/Contact.vue'
 export default {
-	components: {Gradient, Hero, About, Contact}
+	components: {Gradient, Hero, About, Contact},
+	data () {
+		return {
+			bt: null
+		}
+	},
+	mounted () {
+		this.$nextTick(() => {
+			const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+			if (width > 767) {
+				this.bt = new BackTube(document.querySelector('#bt'), {
+					videoId: '7EKr83cipSg'
+				})
+			}
+		})
+	}
 }
 </script>
 
 <style scoped>
-video {
+.btCont {
 	position: fixed;
 	top: 50%;
     left: 50%;
@@ -29,5 +45,8 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
+}
+#bt {
+	height: 100vh;
 }
 </style>
