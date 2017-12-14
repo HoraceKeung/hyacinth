@@ -77,6 +77,9 @@ button:disabled {
 .text-shadow {
 	text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
 }
+.bg-white60 {
+	background-color: rgba(255, 255, 255, 0.6);
+}
 @include media-breakpoint-down(lg) {
 	.container {
 		max-width: 100%;
