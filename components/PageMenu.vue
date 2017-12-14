@@ -18,6 +18,9 @@ export default {
 		return {
 			links: [
 				{name: 0, eleId: 'hero'},
+				{name: 13, eleId: 'profile'},
+				{name: 11, eleId: 'partners'},
+				{name: 12, eleId: 'charities'},
 				{name: 1, eleId: 'contact'}
 			]
 		}

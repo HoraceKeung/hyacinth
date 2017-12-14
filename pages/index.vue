@@ -4,6 +4,9 @@
 		<gradient />
 		<hero />
 		<about />
+		<profile />
+		<partners />
+		<charities />
 		<contact />
 	</section>
 </template>
@@ -13,9 +16,12 @@ import BackTube from 'back-tube'
 import Gradient from '~/components/Gradient.vue'
 import Hero from '~/components/Hero.vue'
 import About from '~/components/About.vue'
+import Profile from '~/components/Profile.vue'
+import Partners from '~/components/Partners.vue'
+import Charities from '~/components/Charities.vue'
 import Contact from '~/components/Contact.vue'
 export default {
-	components: {Gradient, Hero, About, Contact},
+	components: {Gradient, Hero, About, Profile, Partners, Charities, Contact},
 	data () {
 		return {
 			bt: null
