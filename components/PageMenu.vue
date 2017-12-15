@@ -4,8 +4,8 @@
 			<img src="~/assets/img/logo.png">
 		</div>
 		<div class="float-right">
-			<ul :class="'menu-trans pl-0 pb-3 '+(isMenuWhite?'pt-5':'pt-3 bg-white60')">
-				<li :class="'menu-trans d-inline mx-3 pointer'+(isMenuWhite?' text-white':'')" v-for="l in links" @click="scrollTo(l.eleId)">{{lang[l.name]}}</li>
+			<ul :class="'menu-trans pl-0 pb-3 pt-3 '+(isMenuWhite?'pt-md-5':'bg-white60')">
+				<li :class="'menu-trans mx-3 pointer'+(isMenuWhite?' text-white':'')" v-for="l in links" @click="scrollTo(l.eleId)">{{lang[l.name]}}</li>
 			</ul>
 		</div>
 	</div>
@@ -53,6 +53,11 @@ export default {
 	}
 	.logo-overlay img {
 		width: 70px;
+	}
+}
+@include media-breakpoint-up(md) {
+	li {
+		display: inline;
 	}
 }
 </style>
